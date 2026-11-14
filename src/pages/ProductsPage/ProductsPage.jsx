@@ -181,7 +181,7 @@ const ProductsPage = () => {
         title: "Hussain Ahmad Technical Services | Services in Dubai",
         description: "Explore air-conditioning, electromechanical, carpentry, tiling, painting, plumbing and fit-out services from Hussain Ahmad Technical Services LLC in Dubai.",
         ogType: "website",
-        ogImage: `${siteOrigin}/assets/hussain-ahmad-logo.jpeg`,
+        ogImage: `${siteOrigin}/assets/hussain-ahmad-logo-transparent.png`,
         schemas: [...serviceSchemas, faqSchema]
     });
 

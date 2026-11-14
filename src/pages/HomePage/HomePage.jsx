@@ -102,7 +102,7 @@ const HomePage = () => {
         "@id": `${siteOrigin}/#organization`,
         "name": "Hussain Ahmad Technical Services LLC",
         "legalName": "Hussain Ahmad Technical Services LLC",
-        "logo": `${siteOrigin}/assets/hussain-ahmad-logo.jpeg`,
+        "logo": `${siteOrigin}/assets/hussain-ahmad-logo-transparent.png`,
         "image": `${siteOrigin}/assets/hats-about-project.webp`,
         "description": "Technical and maintenance services in Al Quoz, Dubai, for residential and commercial clients.",
         "address": {
@@ -118,7 +118,7 @@ const HomePage = () => {
         title: "Hussain Ahmad Technical Services | Dubai",
         description: "Hussain Ahmad Technical Services LLC provides air-conditioning, MEP, carpentry, tiling, painting, plumbing and fit-out services in Dubai.",
         ogType: "website",
-        ogImage: `${siteOrigin}/assets/hussain-ahmad-logo.jpeg`,
+        ogImage: `${siteOrigin}/assets/hussain-ahmad-logo-transparent.png`,
         schemas: [localBusinessSchema]
     });
 

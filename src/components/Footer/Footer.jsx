@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaMapMarkerAlt, FaClock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaPhoneAlt, FaWhatsapp, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
     const [servicesExpanded, setServicesExpanded] = useState(false);
 
     return (
+        <>
         <footer className="footer">
             <div className="container">
                 <div className="footer-top">
                     <div className="footer-brand">
                         <Link to="/" className="logo">
-                            <img src="/assets/hussain-ahmad-logo.jpeg" alt="Hussain Ahmad Technical Services" className="footer-logo-img" />
+                            <img src="/assets/hussain-ahmad-logo-transparent.png" alt="Hussain Ahmad Technical Services" className="footer-logo-img" />
                         </Link>
                         <p>Hussain Ahmad Technical Services LLC provides technical and maintenance solutions for residential and commercial clients in Dubai. Established in 2015.</p>
                     </div>
@@ -59,8 +60,9 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-col">
-                            <h4>Location &amp; Hours</h4>
+                            <h4>Contact, Location &amp; Hours</h4>
                             <ul>
+                                <li><a href="tel:+971558118429"><FaPhoneAlt size={14} /> +971 55 811 8429</a></li>
                                 <li><span><FaMapMarkerAlt size={14} /> Al Quoz, Dubai, UAE</span></li>
                                 <li><span><FaClock size={14} /> Weekdays: 8:30 AM – 5:00 PM</span></li>
                                 <li><span>Residential &amp; commercial projects</span></li>
@@ -83,6 +85,17 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+        <a
+            className="floating-whatsapp"
+            href="https://wa.me/971558118429"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat with us on WhatsApp"
+            title="Chat with us on WhatsApp"
+        >
+            <FaWhatsapp aria-hidden="true" focusable="false" />
+        </a>
+        </>
     );
 };
 

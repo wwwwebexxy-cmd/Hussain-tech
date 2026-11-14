@@ -317,7 +317,6 @@
     object-fit: contain;
     display: block;
     transition: var(--transition);
-    mix-blend-mode: screen;
 }
 
 @media (max-width: 768px) {
