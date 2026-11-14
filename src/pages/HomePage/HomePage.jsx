@@ -102,7 +102,7 @@ const HomePage = () => {
         "@id": `${siteOrigin}/#organization`,
         "name": "Hussain Ahmad Technical Services LLC",
         "legalName": "Hussain Ahmad Technical Services LLC",
-        "logo": `${siteOrigin}/assets/hussain-ahmad-logo-transparent.png`,
+        "logo": `${siteOrigin}/assets/hussain-ahmad-logo-transparent.webp`,
         "image": `${siteOrigin}/assets/hats-about-project.webp`,
         "description": "Technical and maintenance services in Al Quoz, Dubai, for residential and commercial clients.",
         "address": {

@@ -1,7 +1,7 @@
 import { FaStar, FaDiamond } from 'react-icons/fa6';
 import './Marqueebar.css';
 
-const LOGO = '/assets/hussain-ahmad-logo-transparent.png';
+const LOGO = '/assets/hussain-ahmad-logo-transparent.webp';
 
 const items = [
   { icon: 'diamond', text: 'Plaster Works' },

@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="footer-top">
                     <div className="footer-brand">
                         <Link to="/" className="logo">
-                            <img src="/assets/hussain-ahmad-logo-transparent.png" alt="Hussain Ahmad Technical Services" className="footer-logo-img" />
+                            <img src="/assets/hussain-ahmad-logo-transparent.webp" alt="Hussain Ahmad Technical Services" className="footer-logo-img" />
                         </Link>
                         <p>Hussain Ahmad Technical Services LLC provides technical and maintenance solutions for residential and commercial clients in Dubai. Established in 2015.</p>
                     </div>

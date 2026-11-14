@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <motion.div variants={navLinkVariants}>
                     <Link to="/" className="logo" onClick={closeMenu}>
-                        <img src="/assets/hussain-ahmad-logo-transparent.png" alt="Hussain Ahmad Technical Services" className="logo-img" />
+                        <img src="/assets/hussain-ahmad-logo-transparent.webp" alt="Hussain Ahmad Technical Services" className="logo-img" />
                     </Link>
                 </motion.div>
 

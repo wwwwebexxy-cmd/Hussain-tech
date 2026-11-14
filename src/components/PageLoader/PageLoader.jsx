@@ -22,7 +22,7 @@ const PageLoader = () => {
       <div className="loader-content">
         <div className="loader-circle"></div>
         <div className="loader-logo-container">
-          <img src="/assets/hussain-ahmad-logo-transparent.png" alt="Hussain Ahmad Technical Services" className="loader-logo" />
+          <img src="/assets/hussain-ahmad-logo-transparent.webp" alt="Hussain Ahmad Technical Services" className="loader-logo" />
         </div>
       </div>
     </div>
