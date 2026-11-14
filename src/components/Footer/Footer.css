@@ -28,6 +28,7 @@
     max-width: 100%;
     margin-bottom: 24px;
     transition: transform 0.3s ease;
+    mix-blend-mode: screen;
 }
 
 .footer-logo-img:hover {
@@ -122,6 +123,25 @@
 .social-links {
     display: flex;
     gap: 24px;
+}
+
+.footer-contact-summary {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.footer-contact-summary span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-contact-summary svg {
+    color: var(--accent);
+    flex-shrink: 0;
 }
 
 .social-link {

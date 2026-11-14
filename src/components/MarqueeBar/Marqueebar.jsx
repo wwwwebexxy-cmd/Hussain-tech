@@ -1,26 +1,25 @@
 import { FaStar, FaDiamond } from 'react-icons/fa6';
 import './Marqueebar.css';
 
-const LOGO = '/assets/carples logo.png';
+const LOGO = '/assets/hussain-ahmad-logo.jpeg';
 
 const items = [
-  { icon: 'diamond', text: 'Android Upgrade' },
-  { icon: 'star', text: '360° Camera' },
-  { icon: 'diamond', text: 'Premium Seat Covers' },
-  { icon: 'star', text: 'Car Tinting' },
-  { icon: 'diamond', text: 'Upholstery Works' },
-  { icon: 'star', text: 'Alloy Wheels & LED Lights' },
-  { icon: 'diamond', text: 'Sound Horns' },
-  { icon: 'star', text: 'Car Stereo Upgrade' },
-  { icon: 'diamond', text: 'Smart Lock Systems' },
-  { icon: 'star', text: 'Car Batteries' },
+  { icon: 'diamond', text: 'Plaster Works' },
+  { icon: 'star', text: 'Carpentry & Wood Flooring' },
+  { icon: 'diamond', text: 'Air-Conditioning & Ventilation' },
+  { icon: 'star', text: 'Electromechanical Installation & Maintenance' },
+  { icon: 'diamond', text: 'Engraving & Ornamentation' },
+  { icon: 'star', text: 'Floor & Wall Tiling' },
+  { icon: 'diamond', text: 'Painting Contracting' },
+  { icon: 'star', text: 'Plumbing & Sanitary Installation' },
+  { icon: 'diamond', text: 'False Ceilings & Light Partitions' },
 ];
 
 function MarqueeLap({ suffix = '' }) {
   return (
     <>
       <span className="marquee-logo-wrap">
-        <img src={LOGO} alt="Carplex UAE" className="marquee-logo" />
+        <img src={LOGO} alt="Hussain Ahmad Technical Services" className="marquee-logo" />
       </span>
 
       {items.map(({ icon, text }, i) => (
@@ -37,7 +36,7 @@ function MarqueeLap({ suffix = '' }) {
 
 function MarqueeBar() {
   return (
-    <div className="marquee-bar" aria-label="Promotions ticker">
+    <div className="marquee-bar" aria-label="Technical services">
       <div className="marquee-track">
         <MarqueeLap suffix="a" />
         <MarqueeLap suffix="b" />

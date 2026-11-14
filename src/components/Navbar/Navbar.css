@@ -311,17 +311,18 @@
 
 /* ── LOGO IMAGE ── */
 .logo-img {
-    height: clamp(28px, 5vw, 56px);
+    height: clamp(42px, 5vw, 64px);
     width: auto;
-    max-width: 135px;
+    max-width: 150px;
     object-fit: contain;
     display: block;
     transition: var(--transition);
+    mix-blend-mode: screen;
 }
 
 @media (max-width: 768px) {
     .logo-img {
-        height: 36px;
+        height: 48px;
     }
 }
 
@@ -339,7 +340,7 @@
     }
 
     .logo-img {
-        height: 28px;
+        height: 42px;
     }
 
     .hamburger {

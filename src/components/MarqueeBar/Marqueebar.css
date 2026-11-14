@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   background: #111;
-  color: #f5f0e8;
+  color: #f5f5f5;
   padding: 12px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -52,6 +52,7 @@
   object-fit: contain;
   opacity: 0.9;
   filter: brightness(1.1);
+  mix-blend-mode: screen;
   transition: opacity 0.2s ease;
 }
 
@@ -71,19 +72,19 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #f5f0e8;
+  color: #f5f5f5;
   transition: color 0.2s ease;
 }
 
 .marquee-item:hover {
-  color: #f0c040;
+  color: var(--accent);
 }
 
 /* ── React icon inside item ───────────────────────────────── */
 .marquee-icon {
   font-size: 0.6rem;
   flex-shrink: 0;
-  color: #f0c040;              /* golden icon always */
+  color: var(--accent);        /* brand red icon */
   transition: color 0.2s ease;
 }
 

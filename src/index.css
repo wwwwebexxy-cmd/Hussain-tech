@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  /* ── Carplex Brand Palette ── */
+  /* ── Hussain Ahmad Technical Services palette ── */
   --c-red:        #ef2c24;
   --c-red-coral:  #fd584f;
   --c-red-pure:   #fe0101;
-  --c-brown-dark: #260702;
-  --c-brown-deep: #4b0b02;
-  --c-brown-mid:  #6c2b02;
-  --c-gold:       #bf6e0c;
-  --c-yellow:     #fdec65;
-  --c-yellow-lt:  #fcf89f;
+  --c-brown-dark: #160607;
+  --c-brown-deep: #2b090b;
+  --c-brown-mid:  #4a1013;
+  --c-gold:       #ef2c24;
+  --c-yellow:     #ffffff;
+  --c-yellow-lt:  #f3f3f3;
 
   /* ── Backgrounds ── */
   --bg-primary:   #0a0a0a;
@@ -20,14 +20,14 @@
 
   /* ── Accent System ── */
   --accent:           #ef2c24;
-  --accent-secondary: #fcf89f;
+  --accent-secondary: #f3f3f3;
   --accent-dark:      #4b0b02;
   --accent-glow:      rgba(239, 44, 36, 0.30);
 
   /* ── Text ── */
   --text-primary:   #ffffff;
   --text-secondary: #c8c8c8;
-  --text-muted:     #bf6e0c;
+  --text-muted:     #a6a6a6;
 
   /* ── Borders ── */
   --border:       rgba(255, 255, 255, 0.10);
@@ -120,7 +120,7 @@ ul {
 }
 
 .section-title span {
-  background: linear-gradient(135deg, var(--accent), #fdec65);
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

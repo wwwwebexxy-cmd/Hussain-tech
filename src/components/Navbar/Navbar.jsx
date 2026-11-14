@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaPhoneAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Navbar.css';
 
@@ -46,12 +45,6 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(prev => !prev);
     const closeMenu = () => setMenuOpen(false);
 
-    const handleCall = (e) => {
-        e.preventDefault();
-        window.location.href = 'tel:+971502292861';
-        setTimeout(() => setMenuOpen(false), 150);
-    };
-
     const isActive = (path) => location.pathname === path ? 'active' : '';
 
     return (
@@ -65,7 +58,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <motion.div variants={navLinkVariants}>
                     <Link to="/" className="logo" onClick={closeMenu}>
-                        <img src="/assets/carples logo.png" alt="Carplex" className="logo-img" />
+                        <img src="/assets/hussain-ahmad-logo.jpeg" alt="Hussain Ahmad Technical Services" className="logo-img" />
                     </Link>
                 </motion.div>
 
@@ -82,14 +75,14 @@ const Navbar = () => {
                         <a href="/#services" onClick={closeMenu}>Services</a>
                     </motion.li>
                     <motion.li variants={navLinkVariants}>
-                        <Link to="/products" className={isActive('/products')} onClick={closeMenu}>Products</Link>
+                        <Link to="/products" className={isActive('/products')} onClick={closeMenu}>Service Details</Link>
                     </motion.li>
                     <motion.li variants={navLinkVariants}>
                         <a href="/#contact" onClick={closeMenu}>Contact</a>
                     </motion.li>
                     <motion.li variants={navLinkVariants}>
-                        <a href="tel:+971502292861" className="nav-cta" onClick={handleCall}>
-                            <FaPhoneAlt size={13} /> Call Now
+                        <a href="/#contact" className="nav-cta" onClick={closeMenu}>
+                            Discuss a Project
                         </a>
                     </motion.li>
                 </ul>

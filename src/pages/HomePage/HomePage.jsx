@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import {
     FaAward, FaShieldAlt,
-    FaBolt, FaStar, FaMapMarkerAlt, FaPhoneAlt,
-    FaClock, FaEnvelope, 
+    FaBolt, FaStar, FaMapMarkerAlt,
+    FaClock,
 } from 'react-icons/fa';
 import HeroSlider from '../../components/HeroSlider/HeroSlider';
 import MarqueeBar from '../../components/MarqueeBar/Marqueebar';
@@ -60,30 +60,29 @@ const CountUp = ({ target, suffix }) => {
 
 /* tag field removed — badges no longer rendered */
 const services = [
-    { img: '/assets/Android-Upgrade-card.png',  title: 'Android Upgrade',      desc: 'Latest infotainment with GPS, Apple CarPlay, streaming & full touchscreen control.' },
-    { img: '/assets/camera-360.png',       title: '360° Camera System',   desc: "Bird's-eye surround view for safe parking and effortless maneuvering."              },
-    { img: '/assets/seat-covers-a.png',      title: 'Premium Seat Covers',  desc: 'Luxury leather & diamond-stitched custom covers that transform your cabin.'          },
-    { img: '/assets/Upholstery-Works-c.png',  title: 'Upholstery Works',     desc: 'Professional restoration for seats, door panels and interior trim.'                  },
-    { img: '/assets/car-tinting.png',      title: 'Premium Car Tinting',  desc: 'UV & heat-rejecting films for privacy, comfort and style.'                          },
-    { img: '/assets/LED-Lights.png',      title: 'LED Lighting Upgrade',  desc: 'Upgraded look with energy-efficient, premium LED lighting for enhanced visibility and modern style.'                },
-    { img: '/assets/sound-horns.png',      title: 'Sound Horns',          desc: 'Dual-tone & multi-tone horn systems for enhanced audibility and modern style.'        },
-    { img: '/assets/car-stereo.png',       title: 'Car Stereo Upgrade',   desc: 'High-fidelity speakers, subwoofers, and amps for immersive sound.'                   },
-    { img: '/assets/lock-system.png',      title: 'Smart Lock Systems',   desc: 'Keyless entry, alarm features and smart security for maximum protection.'            },
-    { img: '/assets/car-batteries.png',    title: 'Car Batteries',        desc: 'Premium automotive batteries built for all-weather reliability.'                     },
+    { img: '/assets/hats-plaster.webp', title: 'Plaster Works', desc: 'Interior and exterior plaster finishes, with stone, tile and ceramic cladding.' },
+    { img: '/assets/hats-carpentry-flooring.webp', title: 'Carpentry & Wood Flooring Works', desc: 'Flooring installation and custom woodwork for functional, well-finished interiors.' },
+    { img: '/assets/hats-air-conditioning.webp', title: 'Air-Conditioning, Ventilation & Air Filtration', desc: 'Installation and maintenance of air-conditioning, ventilation, filtration and duct systems.' },
+    { img: '/assets/hats-electromechanical.webp', title: 'Electromechanical Equipment Installation & Maintenance', desc: 'Installation and servicing for generators, cold rooms, refrigeration and commercial equipment.' },
+    { img: '/assets/hats-engraving.webp', title: 'Engraving & Ornamentation Works', desc: 'Decorative engraving and ornamentation for architectural and interior details.' },
+    { img: '/assets/hats-tiling.webp', title: 'Floor & Wall Tiling Works', desc: 'Careful installation of ceramic, cement and natural stone tiles for floors and walls.' },
+    { img: '/assets/hats-painting.webp', title: 'Painting Contracting', desc: 'Painting work for residential and commercial properties.' },
+    { img: '/assets/hats-plumbing.webp', title: 'Plumbing & Sanitary Installation', desc: 'Installation and repair of water supply, drainage, and bathroom and kitchen fixtures.' },
+    { img: '/assets/hats-ceiling-partitions.webp', title: 'False Ceiling & Light Partitions', desc: 'False ceilings and light partitions to finish and optimize interior spaces.' },
 ];
 
 const stats = [
-    { num: 5000, suffix: '+', label: 'Cars Upgraded'    },
-    { num: 50,   suffix: '+', label: 'Premium Products' },
-    { num: 100,  suffix: '%', label: 'Satisfaction'     },
-    { num: 15,   suffix: '+', label: 'Expert Staff'     },
+    { num: 2015, suffix: '', label: 'Established' },
+    { num: 9, suffix: '', label: 'Service Activities' },
+    { num: 2, suffix: '', label: 'Client Sectors' },
+    { num: 5, suffix: '', label: 'Weekdays Open' },
 ];
 
 const features = [
-    { icon: <FaAward />,     label: 'Certified Professionals', sub: 'Factory-trained technicians' },
-    { icon: <FaShieldAlt />, label: 'Warranty Covered',        sub: 'All work fully guaranteed'   },
-    { icon: <FaBolt />,      label: 'Fast Installation',       sub: 'Same-day service available'  },
-    { icon: <FaStar />,      label: 'Premium Quality',         sub: 'Top-grade materials only'    },
+    { icon: <FaAward />, label: 'Cost-Efficient Solutions', sub: 'Practical options for each project' },
+    { icon: <FaShieldAlt />, label: 'Residential & Commercial', sub: 'Solutions for homes and businesses' },
+    { icon: <FaBolt />, label: 'Prompt, Reliable Support', sub: 'Technical and maintenance services' },
+    { icon: <FaStar />, label: 'Quality and Safety', sub: 'Health, safety and environmental standards' },
 ];
 
 const HomePage = () => {
@@ -96,56 +95,30 @@ const HomePage = () => {
         }
     }, []);
 
-    // LocalBusiness / Organization Schema for GEO & Search
+    const siteOrigin = window.location.origin;
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://carplexuae.com/#organization",
-        "name": "Carplex Car Accessories LLC",
-        "legalName": "Carplex Car Accessories LLC",
-        "url": "https://carplexuae.com/",
-        "logo": "https://carplexuae.com/assets/carples-logo-top.png",
-        "image": "https://carplexuae.com/assets/interior-design.png",
-        "description": "Premium car accessories shop in Nad Al Hammar, Dubai. Specializing in Android screen upgrades, 360 camera installation, seat covers, custom upholstery, window tinting, and audio upgrades.",
-        "telephone": "+971502292861",
-        "email": "info@carplexuae.com",
+        "@id": `${siteOrigin}/#organization`,
+        "name": "Hussain Ahmad Technical Services LLC",
+        "legalName": "Hussain Ahmad Technical Services LLC",
+        "logo": `${siteOrigin}/assets/hussain-ahmad-logo.jpeg`,
+        "image": `${siteOrigin}/assets/hats-about-project.webp`,
+        "description": "Technical and maintenance services in Al Quoz, Dubai, for residential and commercial clients.",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Al Mansoori Building, Shop 04, Nad Al Hammar",
-            "addressLocality": "Dubai",
+            "addressLocality": "Al Quoz",
             "addressRegion": "Dubai",
             "addressCountry": "AE"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 25.19,
-            "longitude": 55.35
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
-                "opens": "09:30",
-                "closes": "22:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Friday",
-                "opens": "16:30",
-                "closes": "22:30"
-            }
-        ],
-        "sameAs": [
-            "https://www.instagram.com/carplex_accessories"
-        ]
+        "openingHours": "Mo-Fr 08:30-17:00"
     };
 
     useSeo({
-        title: "Carplex Car Accessories | Premium Auto Upgrades in Dubai",
-        description: "Upgrade your ride at Dubai's #1 car accessories shop. We specialize in plug-and-play Android screens, 360° surround-view cameras, custom leather seat covers, full upholstery, heat-rejecting ceramic tinting, and audio upgrades in Nad Al Hammar.",
-        canonicalUrl: "https://carplexuae.com/",
+        title: "Hussain Ahmad Technical Services | Dubai",
+        description: "Hussain Ahmad Technical Services LLC provides air-conditioning, MEP, carpentry, tiling, painting, plumbing and fit-out services in Dubai.",
         ogType: "website",
-        ogImage: "https://carplexuae.com/assets/carplex-logo-top.png",
+        ogImage: `${siteOrigin}/assets/hussain-ahmad-logo.jpeg`,
         schemas: [localBusinessSchema]
     });
 
@@ -203,25 +176,26 @@ const HomePage = () => {
                 <div className="container hp-about-grid">
                     <div className="hp-about-visual reveal">
                         <div className="hp-about-img-frame">
-                            <img src="/assets/interior-design.png" alt="Carplex workshop" />
+                            <img src="/assets/hats-about-project.webp" alt="Finished residential and commercial interior project" />
                         </div>
                     </div>
                     <div className="hp-about-text reveal">
                         <div className="hp-section-eyebrow hp-eyebrow-left">
                             <span className="hp-eyebrow-line" />
-                            <span className="hp-eyebrow-text">Why Carplex</span>
+                            <span className="hp-eyebrow-text">About Hussain Ahmad Technical Services</span>
                         </div>
                         <h2 className="hp-section-heading">
-                            Dubai's #1<br /><em>Car Accessories</em><br />Specialist
+                            Reliable Technical<br /><em>Services in Dubai</em><br />Since 2015
                         </h2>
                         <p>
-                            With over a decade in the UAE automotive market, Carplex has built a
-                            reputation for premium quality, expert installations, and service that
-                            never compromises.
+                            Established in 2015, Hussain Ahmad Technical Services LLC provides
+                            technical and maintenance solutions from Al Quoz, Dubai, for residential
+                            and commercial clients.
                         </p>
                         <p>
-                            Our technicians use only the finest materials and latest technology —
-                            because your car deserves nothing less.
+                            From MEP and air-conditioning to carpentry, flooring and fit-out work,
+                            the team focuses on prompt support, cost-efficient solutions, and high
+                            quality, health, safety and environmental standards.
                         </p>
                         <div className="hp-features-grid">
                             {features.map((f, i) => (
@@ -245,25 +219,25 @@ const HomePage = () => {
                         <span className="hp-eyebrow-text">Get In Touch</span>
                         <span className="hp-eyebrow-line" />
                     </div>
-                    <h2 className="hp-section-heading reveal">Visit <em>Our Showroom</em></h2>
+                    <h2 className="hp-section-heading reveal">Technical Services <em>in Al Quoz, Dubai</em></h2>
                     <div className="hp-contact-layout">
                         <div className="hp-contact-cards reveal">
                             {[
                                 {
-                                    icon: <FaMapMarkerAlt />, title: 'Find Us',
-                                    lines: ['Al Mansoori Building, Shop 04','Nad Al Hmmar, Dubai — UAE','Ras Al Khor, Dubai — UAE'],
+                                    icon: <FaMapMarkerAlt />, title: 'Location',
+                                    lines: ['Al Quoz, Dubai','United Arab Emirates'],
                                 },
                                 {
-                                    icon: <FaPhoneAlt />, title: 'Call Us',
-                                    links: [{ href: 'tel:+0042711275', label: '+(04) 271 1275' },{ href: 'tel:+971502292861', label: '+971 50 229 2861' }],
+                                    icon: <FaClock />, title: 'Working Hours',
+                                    lines: ['Weekdays','8:30 AM – 5:00 PM'],
                                 },
                                 {
-                                    icon: <FaClock />, title: 'Open Hours',
-                                    lines: ['Sat – Thu: 9:30 AM – 10:00 PM','Friday: 4:30 PM – 10:30 PM'],
+                                    icon: <FaShieldAlt />, title: 'Project Types',
+                                    lines: ['Residential technical works','Commercial maintenance'],
                                 },
                                 {
-                                    icon: <FaEnvelope />, title: 'Email',
-                                    links: [{ href: 'mailto:info@carplexuae.com', label: 'info@carplexuae.com' }],
+                                    icon: <FaAward />, title: 'Our Approach',
+                                    lines: ['Cost-efficient solutions','Quality, health, safety and environmental standards'],
                                 },
                             ].map((item, i) => (
                                 <div className="hp-contact-card" key={i}>
@@ -278,10 +252,10 @@ const HomePage = () => {
                         </div>
                         <div className="hp-map reveal">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.0!2d55.35!3d25.19!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDExJzI0LjAiTiA1NcKwMjEnMDAuMCJF!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                                src="https://maps.google.com/maps?q=Al%20Quoz%2C%20Dubai&output=embed"
                                 allowFullScreen="" loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Carplex location"
+                                title="Al Quoz, Dubai location map"
                             />
                         </div>
                     </div>

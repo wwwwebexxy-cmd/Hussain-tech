@@ -11,25 +11,25 @@ import './HeroSlider.css';
 
 const slides = [
   {
-    image: '/assets/trusted-auto-upgrades.png',
-    subtitle: 'Dubai\'s Trusted Auto Upgrades',
-    title: 'Precision &amp; <span>Prestige</span>',
-    description: 'Transform your vehicle with our premium range of top-tier accessories. From android systems to custom seat covers.',
-    btnText: 'Explore Collection'
+    image: '/assets/hats-hero-renovation.webp',
+    subtitle: 'Hussain Ahmad Technical Services LLC',
+    title: 'Quality work for <span>better spaces</span>',
+    description: 'Established in 2015, serving residential and commercial projects across Dubai.',
+    btnText: 'Explore Services'
   },
   {
-    image: '/assets/upholstery-worksa.png',
-    subtitle: 'Luxury Redefined',
-    title: 'Custom <span>upholstery works</span>',
-    description: 'Bespoke designs tailored to your style. Experience the pinnacle of automotive interior craftsmanship.',
+    image: '/assets/hats-hero-fitout.webp',
+    subtitle: 'Fit-out and finishing',
+    title: 'Thoughtful <span>interior work</span>',
+    description: 'Carpentry, flooring, tiling, painting, ceilings and partitions for homes and businesses.',
     btnText: 'View Services'
   },
   {
-    image: '/assets/Advanced-Technology.png',
-    subtitle: 'Advanced Technology',
-    title: 'Smart <span>Integration</span>',
-    description: 'Stay connected and safe on the road with our cutting-edge 360° cameras and OEM-integrated Android screens.',
-    btnText: 'Upgrade Now'
+    image: '/assets/hats-hero-mep.webp',
+    subtitle: 'MEP and maintenance',
+    title: 'Technical support <span>you can rely on</span>',
+    description: 'Air-conditioning, ventilation, plumbing and electromechanical installation and maintenance.',
+    btnText: 'Discuss a Project'
   }
 ];
 

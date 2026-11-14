@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════════════════
-   CARPLEX — HomePage.css  v6
+   Hussain Ahmad Technical Services — HomePage.css
    Changes: Tag badges removed entirely. Service cards use
             flex column so all cards in a row share equal
             height — body stretches to fill the difference.
@@ -16,8 +16,8 @@
     --red          : #ef2c24;
     --red-bright   : #fe0101;
     --red-soft     : #fd584f;
-    --yellow       : #fcf89f;
-    --yellow-mid   : #fdec65;
+    --yellow       : #f3f3f3;
+    --yellow-mid   : #ffffff;
 
     --bg-black     : #0a0a0a;
     --bg-card      : #111111;

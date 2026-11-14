@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaFacebook, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -12,9 +12,9 @@ const Footer = () => {
                 <div className="footer-top">
                     <div className="footer-brand">
                         <Link to="/" className="logo">
-                            <img src="/assets/carples logo.png" alt="Carplex" className="footer-logo-img" />
+                            <img src="/assets/hussain-ahmad-logo.jpeg" alt="Hussain Ahmad Technical Services" className="footer-logo-img" />
                         </Link>
-                        <p>Dubai's trusted premium car accessories provider. Transforming rides since 2014 with quality installations and premium products.</p>
+                        <p>Hussain Ahmad Technical Services LLC provides technical and maintenance solutions for residential and commercial clients in Dubai. Established in 2015.</p>
                     </div>
 
                     <div className="footer-top-grid">
@@ -22,7 +22,7 @@ const Footer = () => {
                             <h4>Quick Links</h4>
                             <ul>
                                 <li><Link to="/">Home</Link></li>
-                                <li><Link to="/products">Products</Link></li>
+                                <li><Link to="/products">Service Details</Link></li>
                                 <li><a href="/#services">Services</a></li>
                                 <li><a href="/#about">About Us</a></li>
                                 <li><a href="/#contact">Contact</a></li>
@@ -32,21 +32,20 @@ const Footer = () => {
                         <div className="footer-col">
                             <h4>Services</h4>
                             <ul>
-                                <li><Link to="/products">Android Upgrade</Link></li>
-                                <li><Link to="/products">360° Camera System</Link></li>
-                                <li><Link to="/products">Premium Seat Covers</Link></li>
-                                <li><Link to="/products">Premium Car Tinting</Link></li>
-                                <li><Link to="/products">Upholstery Works</Link></li>
+                                <li><Link to="/products">Plaster Works</Link></li>
+                                <li><Link to="/products">Carpentry &amp; Wood Flooring</Link></li>
+                                <li><Link to="/products">Air-Conditioning &amp; Ventilation</Link></li>
+                                <li><Link to="/products">Electromechanical Installation &amp; Maintenance</Link></li>
+                                <li><Link to="/products">Engraving &amp; Ornamentation</Link></li>
                             </ul>
 
                             {/* Collapsible extra services */}
                             <div className={`services-extra ${servicesExpanded ? 'services-extra--open' : ''}`}>
                                 <ul>
-                                    <li><Link to="/products">Car Stereo Upgrade</Link></li>
-                                    <li><Link to="/products">Sound Horns</Link></li>
-                                    <li><Link to="/products">Smart Lock Systems</Link></li>
-                                    <li><Link to="/products">Car Batteries</Link></li>
-                                    <li><Link to="/products">LED Lighting Upgrade</Link></li>
+                                    <li><Link to="/products">Floor &amp; Wall Tiling</Link></li>
+                                    <li><Link to="/products">Painting Contracting</Link></li>
+                                    <li><Link to="/products">Plumbing &amp; Sanitary Installation</Link></li>
+                                    <li><Link to="/products">False Ceilings &amp; Light Partitions</Link></li>
                                 </ul>
                             </div>
 
@@ -60,12 +59,11 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-col">
-                            <h4>Contact</h4>
+                            <h4>Location &amp; Hours</h4>
                             <ul>
-                                <li><a href="tel:+(04)271 1275"><FaPhoneAlt size={11} /> +(04)271 1275</a></li>
-                                <li><a href="tel:+971502292861"><FaPhoneAlt size={14} /> +971 50 229 2861</a></li>
-                                <li><a href="mailto:carplexdxb@gmail.com"><FaEnvelope size={14} /> carplexdxb@gmail.com</a></li>
-                                <li><span><FaMapMarkerAlt size={14} /> Ras Al Khor, Dubai</span></li>
+                                <li><span><FaMapMarkerAlt size={14} /> Al Quoz, Dubai, UAE</span></li>
+                                <li><span><FaClock size={14} /> Weekdays: 8:30 AM – 5:00 PM</span></li>
+                                <li><span>Residential &amp; commercial projects</span></li>
                             </ul>
                         </div>
                     </div>
@@ -73,15 +71,14 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <div className="footer-copyright">
-                        <p>&copy; {new Date().getFullYear()} Carplex Car Accessories LLC. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Hussain Ahmad Technical Services LLC. All rights reserved.</p>
                         <p className="developer-credit">
-                            Developed by <a href="https://suhadigitech.com" target="_blank" rel="noopener noreferrer">Suha Digitech</a>
+                            Established in 2015 · Al Quoz, Dubai
                         </p>
                     </div>
-                    <div className="social-links">
-                        <a href="https://www.instagram.com/carplex_accessories?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social-link" aria-label="Instagram"><FaInstagram /></a>
-                        <a href="https://www.facebook.com/share/18UB5SKYLf/?mibextid=wwXIfr" className="social-link" aria-label="Facebook"><FaFacebook /></a>
-                        <a href="https://wa.me/971502292861" className="social-link" aria-label="WhatsApp"><FaWhatsapp /></a>
+                    <div className="social-links footer-contact-summary" aria-label="Business details">
+                        <span><FaMapMarkerAlt size={15} /> Al Quoz, Dubai</span>
+                        <span><FaClock size={15} /> Weekdays, 8:30 AM – 5:00 PM</span>
                     </div>
                 </div>
             </div>
